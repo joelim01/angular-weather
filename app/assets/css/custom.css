@@ -11,7 +11,7 @@
   fill: #56757c; }
 
 .ct-chart-line {
-  padding-top: 1vw;
+  padding-top: .5vw;
 }
 
 .padded-icon .wi {
@@ -24,7 +24,7 @@
 }
 
 .ui.centered.card {
-  max-height: 440px;
+  max-height: 425px;
 }
 
 #title {
