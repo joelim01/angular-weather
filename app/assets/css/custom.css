@@ -9,3 +9,25 @@
 
 .ct-series-b .ct-slice-pie, .ct-series-b .ct-area {
   fill: #56757c; }
+
+.ct-chart-line {
+  padding-top: 1vw;
+}
+
+.padded-icon .wi {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.ui.fluid.card {
+  max-width: 660px;
+}
+
+.ui.centered.card {
+  max-height: 440px;
+}
+
+#title {
+  padding: 1vw;
+  font-size: 1.5em;
+}

@@ -22,9 +22,10 @@
       for (var i = 0; i < count; i++) {
         var d = new Date();
         d.setDate(d.getDate() + i)
-        chartData.labels.push($filter('date')(d, 'EEEE'))
-        chartData.series[0].push(tempData.list[i].temp.min)
-        chartData.series[1].push(tempData.list[i].temp.max)
+        var day = $filter('date')(d, 'EEEE')
+        chartData.labels.push(day)
+        chartData.series[0].push({meta: `${day}, ${tempData.list[i].weather[0].main}, low of `, value: tempData.list[i].temp.min})
+        chartData.series[1].push({meta: `${day}, ${tempData.list[i].weather[0].main}, high of `, value: tempData.list[i].temp.max})
       }
       return chartData
     }
