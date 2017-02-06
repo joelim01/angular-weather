@@ -1,6 +1,9 @@
 # Front End Test
 An AngularJS focused take home test for Front-end Developers.
 
+## Solution Preview
+![preview](https://dl.dropboxusercontent.com/u/455813290/Blog%20Images/Github/angular-weather-github-preview.png)
+
 ## Instructions
 + Clone this repo
 + Complete this exercise and submit either a zip of the solution or a link to a new repo
