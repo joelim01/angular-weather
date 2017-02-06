@@ -1,0 +1,36 @@
+<div class="column">
+  <div class="ui centered raised fluid card">
+    <div class="ui center aligned very padded">
+      <div class="ui one column center aligned very padded grid">
+        <!-- WeatherIcon -->
+        <i ng-class="$ctrl.weatherIcon" style="font-size: 20vw"></i>
+      </div>
+    </div>
+    <div class="content">
+      <!-- Weather description-->
+      <a class="header">{{$ctrl.weatherDescription}}</a>
+      <div class="meta">
+        <!-- Temperature-->
+        <span class="temperature">{{$ctrl.currentTemp}}F</span>
+      </div>
+      <div class="description">
+        Today's High: {{$ctrl.highTemp}}F<br>
+        Today's Low: {{$ctrl.lowTemp}}F
+      </div>
+    </div>
+    <div class="extra content">
+      <a ng-click="$ctrl.expand()">
+        {{$ctrl.detailText}}
+      </a>
+    </div>
+    <div ng-if="$ctrl.isExpanded" class="content">
+      <div class="description">
+        Wind Speed: {{$ctrl.windSpeed}}<br>
+        Humidity: {{$ctrl.humidity}}%<br>
+        Pressure: {{$ctrl.pressure}} mbar<br>
+        Sunrise: {{$ctrl.sunrise}}<br>
+        Sunset: {{$ctrl.sunset}}<br>
+      </div>
+    </div>
+  </div>
+</div>
